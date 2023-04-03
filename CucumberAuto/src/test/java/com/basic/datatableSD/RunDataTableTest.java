@@ -15,8 +15,8 @@ import cucumber.api.junit.Cucumber;
 			monochrome=true,
 			
 			//automation runt zonder dat de browser opent, dit is om de code testen, wanneer alles goed gaat dat wil zeggen dat die test goed is gebouwd
-			//dryRun = true,
-			dryRun = false,
+			dryRun = true,
+			//dryRun = false,
 			
 			features={"src/test/resources/com/basic/datatableFF/"},
 			glue={"com/basic/datatableSD/"},

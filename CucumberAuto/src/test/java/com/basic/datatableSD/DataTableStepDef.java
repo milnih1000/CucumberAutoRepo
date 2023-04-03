@@ -18,8 +18,9 @@ public class DataTableStepDef {
 
 WebDriver driver =null; 
 
-@Given("^User need to be on facebook login page$")
-public void user_need_to_be_on_facebook_login_page() throws InterruptedException {
+
+ @Given("^User need to be on facebook login page$")
+ public void User_need_to_be_on_facebook_login_page() throws InterruptedException {
 	System.setProperty("webdriver.chrome.driver", "D:\\CUCUMBER_SETUP\\chromedriver_win32\\chromedriver.exe");
 	driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
@@ -32,9 +33,11 @@ public void user_need_to_be_on_facebook_login_page() throws InterruptedException
 		Thread.sleep(3000);
 				
 }
+
+
 //de regex uit het hoofd leren
 @When("^User enters user \"([^\"]*)\" firstname$")
-public void user_enters_user_firstname(String username) throws InterruptedException {
+public void User_enters_user_firstname(String username) throws InterruptedException {
 	driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys(username);
 	Thread.sleep(1000);
 	System.out.println("user firstname is entered  |");

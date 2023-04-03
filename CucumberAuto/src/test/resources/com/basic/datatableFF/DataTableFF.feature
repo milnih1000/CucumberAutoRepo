@@ -4,6 +4,7 @@ Feature: Create account of Facebook3
   Scenario: Validate create user multiple fields31
     Given User need to be on facebook login page
     When Enter following data
+    
       | Username | UserSurname | Mobile |
       | Tom      | Hanks       |   1234 |
       | Jack     | Daniels     |   5678 |
