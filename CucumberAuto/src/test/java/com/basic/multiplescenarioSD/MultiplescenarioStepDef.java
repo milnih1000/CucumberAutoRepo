@@ -37,10 +37,10 @@ public void user_enters_user_firstname() throws InterruptedException {
 	System.out.println("user firstname is entered  |");
 }
 
-@Then("^User checks user firstname is present$")
-public void user_checks_user_firstname_is_present() throws InterruptedException {
+ @Then("^User checks user firstname is present$")
+ public void user_checks_user_firstname_is_present() throws InterruptedException {
   String userNameActual =  driver.findElement(By.xpath("//input[@name='firstname']")).getAttribute("value");
-  Assert.assertEquals("Milton", userNameActual);
+   Assert.assertEquals("Milton", userNameActual);
 	Thread.sleep(1000);
 	System.out.println("user firstname is checked  |");
 }
