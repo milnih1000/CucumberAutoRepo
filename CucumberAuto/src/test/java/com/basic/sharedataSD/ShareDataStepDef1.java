@@ -28,7 +28,6 @@ public void User_checks_user_firstname_is_present(String userName) throws Interr
 }
 
 
-
 @And ("^User enters user \"([^\"]*)\" surname$")
 public void User_enters_user_surname(String surname) throws InterruptedException {
 	  driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys(surname);
