@@ -19,12 +19,15 @@ public ShareDataStepDef1(SharedClass share){
 
 
 @Then("^User checks user \"([^\"]*)\" firstname is present$")
-public void user_checks_user_firstname_is_present(String userName) throws InterruptedException {
+public void User_checks_user_firstname_is_present(String userName) throws InterruptedException {
   String userNameActual =  driver.findElement(By.xpath("//input[@name='firstname']")).getAttribute("value");
   Assert.assertEquals(userName, userNameActual);
 	Thread.sleep(2000);
 	System.out.println("user firstname is checked  |");
+
 }
+
+
 
 @And ("^User enters user \"([^\"]*)\" surname$")
 public void User_enters_user_surname(String surname) throws InterruptedException {
@@ -35,7 +38,7 @@ public void User_enters_user_surname(String surname) throws InterruptedException
   }
   
 @Then ("^User Mobile Field should be blank")
-public void But_User_Mobile_Field_should_be_blank() throws InterruptedException {
+public void User_Mobile_Field_should_be_blank() throws InterruptedException {
 	  String mobileActual =  driver.findElement(By.xpath("//input[@name='reg_email__']")).getAttribute("value");
 	  Assert.assertEquals("", mobileActual);
 	  Thread.sleep(2000);

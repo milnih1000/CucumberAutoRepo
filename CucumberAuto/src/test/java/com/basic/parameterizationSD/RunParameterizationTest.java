@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 			
 			//automation runt zonder dat de browser opent, dit is om de code testen, wanneer alles goed gaat dat wil zeggen dat die test goed is gebouwd
 			//dryRun = true,
-			dryRun = false,
+			//dryRun = false,
 			
 			features={"src/test/resources/com/basic/parameterizationFF/"},
 			glue={"com/basic/parameterizationSD/"},

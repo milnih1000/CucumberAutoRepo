@@ -18,7 +18,7 @@ public class ShareDataStepDef {
 
 
 
-
+	
 @Given("^User need to be on facebook login page$")
 public void user_need_to_be_on_facebook_login_page() throws InterruptedException {
 	
@@ -32,17 +32,20 @@ public void user_need_to_be_on_facebook_login_page() throws InterruptedException
 		Thread.sleep(3000);
 		
 }
+
 //de regex uit het hoofd leren
 @When("^User enters user \"([^\"]*)\" firstname$")
 public void user_enters_user_firstname(String username) throws InterruptedException {
 	driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys(username);
 	Thread.sleep(2000);
 	System.out.println("user firstname is entered  |");
-}
 
+
+}
+}
 
   
 
-}	
+	
   
 

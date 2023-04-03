@@ -8,8 +8,8 @@ Feature: Create account of Facebook9
     Then close browser
 
   Scenario: Validate create user multiple fields92
-    Given User need to be on facebook login page
-    When User enters user firstname
+   Given User need to be on facebook login page
+   When User enters user firstname
     And User enters user surname
     Then User checks user first name is present
     Then User Mobile Field should be blank
