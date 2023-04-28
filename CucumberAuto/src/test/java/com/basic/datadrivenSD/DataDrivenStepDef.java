@@ -35,6 +35,7 @@ public void user_enters_user_firstname(String username) throws InterruptedExcept
 	driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys(username);
 	Thread.sleep(1000);
 	System.out.println("user firstname is entered  |");
+	Thread.sleep(3000);
 }
 
 @Then("^User checks user \"([^\"]*)\" firstname is present$")
@@ -43,13 +44,15 @@ public void user_checks_user_firstname_is_present(String userName) throws Interr
   Assert.assertEquals(userName, userNameActual);
 	Thread.sleep(1000);
 	System.out.println("user firstname is checked  |");
+	
 }
   @And ("^User enters user \"([^\"]*)\" surname$")
   public void User_enters_user_surname(String surname) throws InterruptedException {
 	  driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys(surname);
 	  Thread.sleep(1000);
 	  System.out.println("user firstname is entered  |");
-	 
+	
+	  Thread.sleep(3000);	  
   }
   
   @Then ("^User Mobile Field should be blank")

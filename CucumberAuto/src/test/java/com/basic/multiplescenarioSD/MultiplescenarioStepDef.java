@@ -43,7 +43,11 @@ public void user_enters_user_firstname() throws InterruptedException {
    Assert.assertEquals("Milton", userNameActual);
 	Thread.sleep(1000);
 	System.out.println("user firstname is checked  |");
+	
+	Thread.sleep(3000);
 }
+ 
+ 
   @And ("^User enters user surname$")
   public void User_enters_user_surname() throws InterruptedException {
 	  driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys("Nihora");

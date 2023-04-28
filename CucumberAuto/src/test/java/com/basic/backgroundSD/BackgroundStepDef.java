@@ -43,6 +43,8 @@ public void user_checks_user_firstname_is_present(String userName) throws Interr
   Assert.assertEquals(userName, userNameActual);
 	Thread.sleep(1000);
 	System.out.println("user firstname is checked  |");
+	
+	Thread.sleep(3000);
 }
   @And ("^User enters user \"([^\"]*)\" surname$")
   public void User_enters_user_surname(String surname) throws InterruptedException {
@@ -50,6 +52,8 @@ public void user_checks_user_firstname_is_present(String userName) throws Interr
 	  Thread.sleep(1000);
 	  System.out.println("user firstname is entered  |");
 	 
+	  Thread.sleep(3000);
+	  
   }
   
   @Then ("^User Mobile Field should be blank")
@@ -58,6 +62,8 @@ public void user_checks_user_firstname_is_present(String userName) throws Interr
 	  Assert.assertEquals("", mobileActual);
 	  Thread.sleep(1000);
 	System.out.println("user mobile field was blank|");
+	
+	Thread.sleep(3000);
 	
   }
   

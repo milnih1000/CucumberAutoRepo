@@ -23,9 +23,10 @@ public void user_need_to_be_on_facebook_login_page() {
 }
 
 @When("^User enters user firstname$")
-public void user_enters_user_firstname() {
+public void user_enters_user_firstname() throws InterruptedException {
 	driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Milton");
     
+	Thread.sleep(3000);
 }
 
 @Then("^User checks user first name is present$")
