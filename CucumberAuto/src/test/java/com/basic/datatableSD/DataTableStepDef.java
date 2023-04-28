@@ -59,8 +59,7 @@ public void user_checks_user_firstname_is_present(String userName) throws Interr
 	  driver.findElement(By.xpath("//input[@name='lastname']")).sendKeys(surname);
 	  Thread.sleep(1000);
 	  System.out.println("user firstname is entered  |");
-	 
-  
+	   
 	  Thread.sleep(3000);
   }
   
