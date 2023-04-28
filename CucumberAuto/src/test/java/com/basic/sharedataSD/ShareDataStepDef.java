@@ -24,7 +24,7 @@ public void User_need_to_be_on_facebook_login_page() throws InterruptedException
 	
 		driver.get("https://www.facebook.com/");
 		//deze onthouden
-		driver.findElement(By.xpath("//button[contains(text(),'Essentiële en optionele cookies toestaan')]")).click();
+		driver.findElement(By.xpath("//button[contains(text(),'Alle cookies toestaan')]")).click();
 		Thread.sleep(3000);
 		//deze onthouden
 		driver.findElement(By.xpath("//a[contains(@class,'_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy')]")).click();	

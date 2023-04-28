@@ -15,7 +15,7 @@ public class SharedClass {
 	@Before
 	public WebDriver setup(){
 		if(driver == null){
-			System.setProperty("webdriver.chrome.driver", "D:\\CUCUMBER_SETUP\\chromedriver_win32\\chromedriver.exe");
+		//	System.setProperty("webdriver.chrome.driver", "D:\\CUCUMBER_SETUP\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();	
 						
 		}
