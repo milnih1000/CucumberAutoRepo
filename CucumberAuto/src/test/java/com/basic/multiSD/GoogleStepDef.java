@@ -19,13 +19,13 @@ public class GoogleStepDef {
 			driver.get("https://www.google.com/");
 
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//button[(@id='L2AGLb')]")).click();
+			driver.findElement(By.xpath("//button[(@id='L2AGLb')]/div")).click();
 			
 	}
 	
 	@When ("^User enters search string$")
 	public void User_enters_search_string() throws InterruptedException {
-		driver.findElement(By.xpath("//input[@class='gLFyf']")).sendKeys("selenium");
+		driver.findElement(By.xpath("//textarea[@class='gLFyf']")).sendKeys("selenium");
 		Thread.sleep(1000);
 		
 		
