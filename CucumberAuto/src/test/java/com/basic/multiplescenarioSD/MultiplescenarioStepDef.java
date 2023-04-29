@@ -5,11 +5,13 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class MultiplescenarioStepDef {
 
@@ -17,8 +19,11 @@ WebDriver driver;
 
 @Given("^User need to be on facebook login page$")
 public void user_need_to_be_on_facebook_login_page() throws InterruptedException {
+	//WebDriverManager.firefoxdriver().setup();
+	//WebDriverManager.chromedriver().setup();	
 	System.setProperty("webdriver.chrome.driver", "D:\\CUCUMBER_SETUP\\chromedriver_win32\\chromedriver.exe");
 	driver = new ChromeDriver();
+	//driver = new FirefoxDriver();
 		driver.get("https://www.facebook.com/");
 		//deze onthouden
 		driver.findElement(By.xpath("//button[contains(text(),'Alle cookies toestaan')]")).click();
